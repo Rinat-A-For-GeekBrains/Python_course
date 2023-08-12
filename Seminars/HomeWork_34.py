@@ -30,8 +30,9 @@ print (type (list))
 list1 = []
 for i in list:
 #    list1.append(Sum_glasn (i))
-#   list1.append(lambda x: sum(1 for i in x if i in 'аоуеиыэюя')) # здесь не работает непонятно почему
-   list1.append(sum (1 for i in list if i in 'аоуеиыэюя'))
+  y = lambda x: sum(1 for i in x if i in 'аоуеиыэюя')
+  list1.append(y(i)) # здесь не работает непонятно почему
+   # list1.append(sum (1 for i in list if i in 'аоуеиыэюя'))
 # if (len(set(list1)) == 1):
 #     print("Парам пам-пам")
 # else:
